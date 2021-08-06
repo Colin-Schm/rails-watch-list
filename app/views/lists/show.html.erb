@@ -5,18 +5,14 @@
   <thead>
     <tr>
     	<th scope="col">#</th>
-      <th scope="col">name</th>
       <th scope="col">comment</th>
-      <th scope="col">rating</th>
     </tr>
   </thead>
   <tbody>
     <% @list.bookmarks.each_with_index do |bookmark, i|  %>
       <tr>
         <th scope="row"><%= i + 1 %></th>
-        <td><%= bookmark.name %></td>
         <td><%= bookmark.comment %></td>
-        <td><%= bookmark.rating %></td>
       </tr>
   <% end %>
   </tbody>
