@@ -3,10 +3,6 @@ class BookmarksController < ApplicationController
 	before_action :get_book_params, only: [:show]
 	before_action :set_bookmark, only: :destroy
 
-	def index
-		@bookmarks = Bookmark.all
-	end
-
 	def show
 	end
 
